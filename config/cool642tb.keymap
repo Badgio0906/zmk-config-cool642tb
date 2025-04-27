@@ -59,6 +59,14 @@
 
             tapping-term-ms = <180>;
         };
+
+        tapdanceKanaEisu: tapdanceKanaEisu {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCEKANAEISU";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp LANG_HIRAGANA>, <&kp LANG_ZENKAKUHANKAKU>;
+        };
     };
 
     keymap {
@@ -66,10 +74,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp L    &kp U         &tapdance3    &kp T                                &kp LANGUAGE_5  &tapdance1  &kp R  &kp Y  &kp P
-&tapdance2  &kp I    &kp A         &kp O         &kp MINUS  &to 1        &none        &kp K           &kp T       &kp N  &kp S  &kp H
-&kp Z       &kp X    &kp C         &kp E         &kp V      &none        &none        &kp G           &kp D       &kp M  &kp J  &kp B
-&kp ESCAPE  &kp TAB  &kp LEFT_GUI  &kp LEFT_GUI  &kp BSPC   &lt 1 SPACE  &lt 2 ENTER  &kp DELETE                                &kp LEFT_SHIFT
+&kp Q       &kp L    &kp U         &tapdance3    &kp T                                &tapdanceKanaEisu  &tapdance1  &kp R  &kp Y  &kp P
+&tapdance2  &kp I    &kp A         &kp O         &kp MINUS  &to 1        &none        &kp K              &kp T       &kp N  &kp S  &kp H
+&kp Z       &kp X    &kp C         &kp E         &kp V      &none        &none        &kp G              &kp D       &kp M  &kp J  &kp B
+&kp ESCAPE  &kp TAB  &kp LEFT_GUI  &kp LEFT_GUI  &kp BSPC   &lt 1 SPACE  &lt 2 ENTER  &kp DELETE                                   &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
