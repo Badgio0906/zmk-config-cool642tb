@@ -62,6 +62,32 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        tapdance1: tapdance1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE1";
+            #binding-cells = <0>;
+            tapping-term-ms = <120>;
+            bindings = <&kp W>, <&kp F>;
+        };
+
+        tapdance2: tapdance2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE2";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp PERIOD>;
+
+            tapping-term-ms = <120>;
+        };
+
+        tapdance3: tapdance3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE3";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&kp SEMICOLON>;
+
+            tapping-term-ms = <120>;
+        };
     };
 
     keymap {
@@ -69,7 +95,7 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp L    &kp U             &kp COLON     &kp T                                                   &kp F       &kp W  &kp R  &kp Y  &kp P
+&kp Q       &kp L    &kp U             &kp COLON     &kp T                                                   &kp F       &none  &kp R  &kp Y  &kp P
 &kp COMMA   &kp I    &kp A             &kp O         &kp MINUS  &to 1                 &kp MINUS              &kp K       &kp T  &kp N  &kp S  &kp H
 &kp Z       &kp X    &kp C             &kp E         &kp V      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp G       &kp D  &kp M  &kp J  &kp B
 &kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp BSPC   &lt 1 SPACE           &lt 2 ENTER            &kp DELETE                       &kp LEFT_SHIFT
