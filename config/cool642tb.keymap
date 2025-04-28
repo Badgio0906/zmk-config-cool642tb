@@ -34,26 +34,26 @@
             tapping-term-ms = <200>;
         };
 
-        tapdance1: tapdance1 {
+        tapdanceWF: tapdanceWF {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE1";
+            label = "TAPDANCEWF";
             #binding-cells = <0>;
             tapping-term-ms = <180>;
             bindings = <&kp W>, <&kp F>;
         };
 
-        tapdance2: tapdance2 {
+        tapdanceCommaPeriod: tapdanceCommaPeriod {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE2";
+            label = "TAPDANCECOMMAPERIOD";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp PERIOD>;
 
             tapping-term-ms = <180>;
         };
 
-        tapdance3: tapdance3 {
+        tapdanceColonSemicolon: tapdanceColonSemicolon {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE3";
+            label = "TAPDANCECOLONSEMICOLON";
             #binding-cells = <0>;
             bindings = <&kp COLON>, <&kp SEMICOLON>;
 
@@ -67,6 +67,49 @@
             tapping-term-ms = <180>;
             bindings = <&kp LANG_HIRAGANA>, <&kp LANG_ZENKAKUHANKAKU>;
         };
+
+        tapdanceKG: tapdanceKG {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCEKG";
+            #binding-cells = <0>;
+            bindings = <&kp K>, <&kp G>;
+
+            tapping-term-ms = <180>;
+        };
+
+        tapdanceTD: tapdanceTD {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCETD";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp D>;
+
+            tapping-term-ms = <180>;
+        };
+
+        tapdanceNM: tapdanceNM {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCENM";
+            #binding-cells = <0>;
+            bindings = <&kp N>, <&kp M>;
+
+            tapping-term-ms = <180>;
+        };
+
+        tapdanceSJ: tapdanceSJ {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCESJ";
+            #binding-cells = <0>;
+            bindings = <&kp S>, <&kp J>;
+
+            tapping-term-ms = <180>;
+        };
+
+        tapdanceHB: tapdanceHB {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCEHB";
+            #binding-cells = <0>;
+            bindings = <&kp H>, <&kp B>;
+        };
     };
 
     keymap {
@@ -74,10 +117,10 @@
 
         default_layer {
             bindings = <
-&kp Q       &kp L    &kp U         &tapdance3    &kp T                                &tapdanceKanaEisu  &tapdance1  &kp R  &kp Y  &kp P
-&tapdance2  &kp I    &kp A         &kp O         &kp MINUS  &to 1        &none        &kp K              &kp T       &kp N  &kp S  &kp H
-&kp Z       &kp X    &kp C         &kp E         &kp V      &none        &none        &kp G              &kp D       &kp M  &kp J  &kp B
-&kp ESCAPE  &kp TAB  &kp LEFT_GUI  &kp LEFT_GUI  &kp BSPC   &lt 1 SPACE  &lt 2 ENTER  &kp DELETE                                   &kp LEFT_SHIFT
+&kp Q                 &kp L    &kp U         &tapdanceColonSemicolon  &kp T                                &tapdanceKanaEisu  &tapdanceWF  &kp R        &kp Y        &kp P
+&tapdanceCommaPeriod  &kp I    &kp A         &kp O                    &kp MINUS  &to 1        &none        &tapdanceKG        &tapdanceTD  &tapdanceNM  &tapdanceSJ  &tapdanceHB
+&kp Z                 &kp X    &kp C         &kp E                    &kp V      &none        &none        &kp G              &kp D        &kp M        &kp J        &kp B
+&kp ESCAPE            &kp TAB  &kp LEFT_GUI  &none                    &kp BSPC   &lt 1 SPACE  &lt 2 ENTER  &kp DELETE                                                &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
