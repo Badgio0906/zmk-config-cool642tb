@@ -128,7 +128,7 @@
 &kp Q                 &kp L    &kp U         &tapdanceColonSemicolon  &kp TILDE                             &tapdanceKanaEisu  &tapdanceWF  &kp R  &kp Y  &kp P
 &tapdanceCommaPeriod  &kp I    &kp A         &kp O                    &kp MINUS  &to 1         &none        &kp K              &kp T        &kp N  &kp S  &kp H
 &kp Z                 &kp X    &kp C         &kp E                    &kp V      &kp LEFT_GUI  &none        &kp G              &kp D        &kp M  &kp J  &kp B
-&kp LCTRL             &kp TAB  &kp LEFT_ALT  &kp LEFT_SHIFT           &kp BSPC   &lt 1 SPACE   &lt 2 ENTER  &kp DELETE                                    &kp LEFT_SHIFT
+&kp LCTRL             &kp TAB  &kp LEFT_ALT  &kp LEFT_SHIFT           &kp BSPC   &lt 1 SPACE   &lt 2 ENTER  &kp RIGHT_SHIFT                               &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -136,10 +136,10 @@
 
         FUNCTION {
             bindings = <
-&kp N1          &kp N2       &kp N3        &kp N4        &kp N5                                                   &none           &kp N7        &kp N8        &kp N9        &kp COLON
-&kp LEFT_SHIFT  &kp AT_SIGN  &kp HASH      &kp DOLLAR    &kp PERCENT   &to 0                   &kp INT_MUHENKAN   &none           &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH
-&kp PLUS        &kp MINUS    &kp ASTERISK  &kp SLASH     &kp EQUAL     &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp TILDE       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
-&bt BT_PRV      &bt BT_NXT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &lt_to_layer_0 1 SPACE  &kp MINUS          &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
+&kp N1          &kp N2       &kp N3        &kp N4        &kp N5                                                   &none      &kp N7        &kp N8        &kp N9        &kp COLON
+&kp LEFT_SHIFT  &kp AT_SIGN  &kp HASH      &kp DOLLAR    &kp PERCENT   &to 0                   &kp INT_MUHENKAN   &none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH
+&kp PLUS        &kp MINUS    &kp ASTERISK  &kp SLASH     &kp EQUAL     &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&bt BT_PRV      &bt BT_NXT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &lt_to_layer_0 1 SPACE  &kp MINUS          &none                                                &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
