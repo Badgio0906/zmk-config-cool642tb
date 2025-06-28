@@ -126,7 +126,7 @@
         default_layer {
             bindings = <
 &kp Q                 &kp L    &kp U         &tapdanceColonSemicolon  &kp TILDE                             &tapdanceKanaEisu  &tapdanceWF  &kp R  &kp Y  &kp P
-&tapdanceCommaPeriod  &kp I    &kp A         &kp O                    &kp MINUS  &to 1         &none        &kp K              &kp T        &kp N  &kp S  &kp H
+&tapdanceCommaPeriod  &kp I    &kp A         &kp O                    &kp MINUS  &to 6         &none        &kp K              &kp T        &kp N  &kp S  &kp H
 &kp Z                 &kp X    &kp C         &kp E                    &kp V      &kp LEFT_GUI  &none        &kp G              &kp D        &kp M  &kp J  &kp B
 &kp LCTRL             &kp TAB  &kp LEFT_ALT  &kp LEFT_SHIFT           &kp BSPC   &lt 1 SPACE   &lt 2 ENTER  &kp RIGHT_SHIFT                               &kp DELETE
             >;
@@ -192,9 +192,9 @@
         layer_6 {
             bindings = <
 &kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
+&kp A       &kp S      &kp D     &kp F     &kp G        &to 0   &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
 &kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
+&kp ESCAPE  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
