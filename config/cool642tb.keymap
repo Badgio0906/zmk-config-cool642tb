@@ -136,10 +136,10 @@
 
         FUNCTION {
             bindings = <
-&kp N1          &kp N2       &kp N3        &kp N4        &kp N5                                                   &none      &kp N7        &kp N8        &kp N9        &kp COLON
-&kp LEFT_SHIFT  &kp AT_SIGN  &kp HASH      &kp DOLLAR    &kp PERCENT   &to 0                   &kp INT_MUHENKAN   &none      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH
-&kp PLUS        &kp MINUS    &kp ASTERISK  &kp SLASH     &kp EQUAL     &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
-&bt BT_PRV      &bt BT_NXT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &lt_to_layer_0 1 SPACE  &kp MINUS          &none                                                &kp LEFT_SHIFT
+&kp N1          &kp N2       &kp N3        &kp N4        &kp N5                                                   &none            &kp N7        &kp N8        &kp N9        &kp COLON
+&kp LEFT_SHIFT  &kp AT_SIGN  &kp HASH      &kp DOLLAR    &kp PERCENT   &to 0                   &kp INT_MUHENKAN   &none            &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp SLASH
+&kp PLUS        &kp MINUS    &kp ASTERISK  &kp SLASH     &kp EQUAL     &kp LEFT_BRACKET        &kp RIGHT_BRACKET  &kp TILDE        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&bt BT_PRV      &bt BT_NXT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &lt_to_layer_0 1 SPACE  &kp MINUS          &kp RIGHT_SHIFT                                            &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
