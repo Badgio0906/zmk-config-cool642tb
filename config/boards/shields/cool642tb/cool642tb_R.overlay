@@ -50,9 +50,9 @@ trackball: trackball@0 {
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <400>;              // ← CPIをここに移動
-        invert-x;                 // ← INVERT_X相当
-        invert-scroll-x;          // ← INVERT_SCROLL_X相当
+        cpi = <400>;
+        invert-x;
+        // invert-scroll-x は削除
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
