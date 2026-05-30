@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: telzo2000
-      url-base: https://github.com/telzo2000
+    - name: badjeff                      # ← telzo2000 から変更
+      url-base: https://github.com/badjeff  # ← ここも変更
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: telzo2000
+      remote: badjeff                    # ← ここも変更
       revision: main
   self:
     path: config
