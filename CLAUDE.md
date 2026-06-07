@@ -78,6 +78,15 @@ output/
 └── ...
 ```
 
+### output フォルダのパス
+
+| 環境 | パス |
+|---|---|
+| Ubuntu (WSL2) | `/home/romcr/zmk-config-cool642tb/output` |
+| Windows | `\\wsl.localhost\Ubuntu\home\romcr\zmk-config-cool642tb\output` |
+
+Windows パスはエクスプローラーのアドレスバーにそのまま貼り付けて開ける。
+
 ### エラー時のログ確認
 
 ```bash
